@@ -1,0 +1,852 @@
+	<!DOCTYPE html>
+
+<!--[if lt IE 7 ]><html class="ie ie6 no-js" lang="en"><![endif]-->
+
+<!--[if IE 7 ]><html class="ie ie7 no-js" lang="en"><![endif]-->
+
+<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"><![endif]-->
+
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- Mirrored from 360digital.in/audio.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Feb 2026 14:14:08 GMT -->
+<head>
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+
+	<title>360 Degree</title>
+
+	<meta name="description" content="powered by iPOT Technologies" />	<meta name="keywords" content="360, Studio" />	<meta name="generator" content="Studio" />
+
+    <meta name="robots" content="index,follow" />
+
+	<meta name="author" content="Prestashop 1.5">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="icon" type="image/vnd.microsoft.icon" href="#" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="#" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'/>
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+
+	 
+
+	<link href="css/global.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+
+       
+
+    <link href="css/global-1.css" rel="stylesheet" type="text/css" media="all" />            
+
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+	   		    
+
+    <script type="text/javascript" src="js/superfish-modified.js"></script>	
+
+    
+
+
+
+
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+
+
+<!--------------Script For Gallery--------------->
+
+                    
+
+                    
+
+                    <link href="gallery/effect.css" rel="stylesheet" media="screen" />
+
+					<script type="text/javascript" src="gallery/jquery.min.js"></script>
+
+					<script type="text/javascript" src="gallery/bkgslide.js"></script>
+
+					<script type="text/javascript" src="gallery/menu.html"></script>
+
+					<script type="text/javascript" src="gallery/jquery.jcarousel.pack.js"></script>
+
+                    <link rel="stylesheet" type="text/css" href="gallery/jquery.jcarousel.css" />
+
+
+
+ 
+
+<script type="text/javascript">
+
+var images = [ "img4.JPG",];
+
+var imgPath = 'images/showreel';
+
+$(document).ready(function(){
+
+$('#servicesWrap').fadeIn(2000);
+
+$('#servicesWrap').bkgSlide({
+
+images          : images,                       // list of images to use
+
+imagePath       : imgPath,                      // path where to find the images
+
+speed           : 2000,                         // time in milliseconds between two image changes, 0 to disable autoplay
+
+direction       : 'prev',                     // direction for autoplay ('random' / 'next' / 'prev')
+
+wrap            : true,                         // whether or not to wrap when reaching one end of the images list
+
+nav             : true,                         // whether ot not to setup navigation handlers
+
+// ( true or 'all' for all buttons
+
+// or an array with wanted options in the order you want them :
+
+// [ 'prev', 'list', 'next', 'toggle' ]
+
+// or a string with a single option )
+
+stopOnNav       : true,                         // whether or not to stop autoplay when using the navigation handlers
+
+width           : 'auto',                       // width of the background images containers ('auto' will get it from target)
+
+height          : 768,                          // height of the background images containers ('auto' will get it from target)
+
+containersClass : '',                           // class to add to the containers
+
+effect          : 'fadeOut',                    // what kind of effect to use for transitions ('fadeOut' / 'slideUp' / 'hide')
+
+duration        : 3500,                           // duration of the transition
+
+afterInit       : function(target, bkgSlider){} // callback function launched after initialization
+
+});
+
+});
+
+/* This script and many more are available free online at
+
+The JavaScript Source!! http://javascript.internet.com
+
+Created by: Cat Arriola | http://astrodiva.journalspace.com/ */
+
+
+
+function fixImgs(whichId, maxW) {
+
+  var pix=document.getElementById(whichId).getElementsByTagName('img');
+
+  for (i=0; i<pix.length; i++) {
+
+    w=pix[i].width;
+
+    h=pix[i].height;
+
+    if (w > maxW) {
+
+      f=1-((w - maxW) / w);
+
+      pix[i].width=w * f;
+
+      pix[i].height=h * f;
+
+    }
+
+  }
+
+}
+
+
+
+// Multiple onload function created by: Simon Willison
+
+// http://simonwillison.net/2004/May/26/addLoadEvent/
+
+function addLoadEvent(func) {
+
+  var oldonload = window.onload;
+
+  if (typeof window.onload != 'function') {
+
+    window.onload = func;
+
+  } else {
+
+    window.onload = function() {
+
+      if (oldonload) {
+
+        oldonload();
+
+      }
+
+      func();
+
+    }
+
+  }
+
+}
+
+
+
+addLoadEvent(function() {
+
+  fixImgs('photos',800);  // ('element ID', maximum width)
+
+});
+
+
+
+</script>
+
+
+
+ 
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+//jCarousel Plugin
+
+$('#carousel').jcarousel({
+
+vertical: true,
+
+scroll: 1,
+
+auto: '0',
+
+wrap: 'last',
+
+initCallback: mycarousel_initCallback
+
+});
+
+//Front page Carousel - Initial Setup
+
+$('div#slideshow-carousel a img').css({'opacity': '0.5'});
+
+$('div#slideshow-carousel a img:first').css({'opacity': '1.0'});
+
+$('div#slideshow-carousel li a:first').append('<span class="arrow"></span>')
+
+//Combine jCarousel with Image Display
+
+$('div#slideshow-carousel li a').hover(
+
+function () {
+
+
+
+if (!$(this).has('span').length) {
+
+$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+
+$(this).stop(true, true).children('img').css({'opacity': '1.0'});
+
+}		
+
+},
+
+function () {
+
+$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+
+$('div#slideshow-carousel li a').each(function () {
+
+if ($(this).has('span').length) $(this).children('img').css({'opacity': '1.0'});
+
+});
+
+}
+
+).click(function () {
+
+$('span.arrow').remove();        
+
+$(this).append('<span class="arrow"></span>');
+
+$('div#slideshow-main li').removeClass('active');        
+
+$('div#slideshow-main li.' + $(this).attr('rel')).addClass('active');	
+
+return false;
+
+});
+
+});
+
+//Carousel Tweaking
+
+function mycarousel_initCallback(carousel) {
+
+// Pause autoscrolling if the user moves with the cursor over the clip.
+
+carousel.clip.hover(function() {
+
+carousel.stopAuto();
+
+}, function() {
+
+carousel.startAuto();
+
+});
+
+}
+
+</script>
+
+                    
+
+ 
+
+                    
+
+                    <!-----------///Script For Gallery///------------>
+
+
+
+</head>
+
+<body id="index">
+
+ 
+
+<div id="wrapper1">
+
+<div id="wrapper2">
+
+<div id="wrapper3" class="container_12 clearfix">
+
+
+
+<header id="header">
+
+	<div class="outer">
+
+		<a id="header_logo" href="index-2.html" title=""><img class="logo" src="images/logo.png" alt="360 Degree Studio" /></a>
+
+		 
+
+<!-- MODULE Block cart -->
+
+<div id="cart_block" class="block exclusive">
+
+	<h4>
+
+		<a href="#"> </a>	</h4>
+
+	<div class="block_content">
+
+
+
+	<!-- block list of products -->
+
+	<div id="cart_block_list" class="expanded">
+
+			<p  id="cart_block_no_products"> </p>
+
+				<div class="cart-prices">
+
+			<div class="cart-prices-block">
+
+	<span id="cart_block_shipping_cost" class="price ajax_cart_shipping_cost"> </span>
+
+			<span> </span>			</div>
+
+									<div class="cart-prices-block">
+
+				<span id="cart_block_total" class="price ajax_block_cart_total"> </span>
+
+			<span> </span>			</div>
+
+		</div>
+
+				<p id="cart-buttons">
+
+			<a href="#" class="button_mini" title="Cart"> </a>			
+
+            <a href="#" id="button_order_cart" class="exclusive" title="Check out"><span></span> </a>		</p>
+
+	</div>
+
+	</div>
+
+</div>
+
+<!-- /MODULE Block cart --><div id="topmenu">
+
+	<ul class="sf-menu clearfix">
+
+		<li ><a href="index-2.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a>
+
+        <!--<ul>
+
+        <li ><a href="#">Who we are</a></li>
+
+        <li><a href="#">Siit amet conse ctetur</a></li>
+
+        <li><a href="#">Adipisicing elit</a></li>
+
+        </ul> -->
+
+        </li>
+
+        <li><a href="who-we-are.html">Who we are &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li ><a href="services.html">Services &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li><a href="gallery.html">Gallery &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a>
+
+        <!--<ul>
+
+        <li><a href="show-reel.html">Showreel</a></li>
+
+        </ul> -->
+
+        </li>
+
+        <li><a href="forum.html">Forum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li ><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://www.youtube.com/user/360degreedigital/videos" target="_blank"><i class="fa fa-youtube-play" style="font-size:30px;color:red;margin-top:-7px;"></i></a></li>
+
+        
+
+		</ul>
+
+</div>
+
+
+
+	</div>
+
+</header>
+
+
+
+<div class="columns clearfix">
+
+<div class="outer">
+
+
+
+
+
+<div id="center_column" class="center_column">
+
+
+
+
+
+	 
+
+ 
+
+  
+
+
+
+ 
+
+<div id="tmfeatured">
+
+<br><br><br>
+
+ 
+
+	<h4>showreel</h4>
+
+	    	<div class="left-line"></div>
+
+        <div class="right-line"></div>
+
+        
+
+           <div class="clearfix"></div>
+
+<div  class="afterCont"  >
+
+    <div  class="afterFixcont" >
+
+      <div class="showreel_vio" >
+
+         
+
+        
+
+        
+
+        <div class="innermenu"  > 
+
+          
+
+          
+
+          
+
+          
+
+          <ul  class="sf-menu clearfix">
+
+		<li><a style="color: #fff;" href="show-reel.html">DI  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a> </li>
+
+        <li><a style="color:#FFFFFF;" href="vfx.html">VFX/CG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li><a style="color:#FFFFFF;" href="comm.html">COMMERICAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li><a style="color: #C0C0C0;" href="#">AUDIO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+        <li><a style="color:#FFFFFF;" href="edit.html">EDITORIAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</a></li>
+
+       
+
+        
+
+		</ul>
+
+          
+
+        </div>
+
+        <div id="slideshow-main" style="height:360px;">
+
+        
+
+        
+
+        
+
+         <ul>
+
+<li class="p7 active">
+
+          <iframe width="99.8%" height="360" src="http://www.youtube.com/embed/g1-eIOxJ1jc" frameborder="0" allowfullscreen></iframe>
+
+          </li>
+
+<li class="p2">
+
+          <iframe width="99.8%" height="360" src="http://www.youtube.com/embed/Ct2h_duORlg" frameborder="0" allowfullscreen></iframe>
+
+          </li>
+
+          <li class="p1">
+
+          <iframe width="99.8%" height="360" src="http://www.youtube.com/embed/EHMhVrhaAEE" frameborder="0" allowfullscreen></iframe>
+
+          </li>
+
+<li class="p3">
+
+          <iframe width="99.8%" height="360" src="http://www.youtube.com/embed/0bOyVfBJ7pA" frameborder="0" allowfullscreen></iframe>
+
+          </li>
+          
+          <li class="p4">
+
+          <iframe width="99.8%" height="360" src="https://www.youtube.com/embed/avaXcL7Uppw" frameborder="0" allowfullscreen></iframe>
+
+          </li>
+
+
+          
+
+          	
+
+
+
+       
+
+            
+
+           
+
+            
+
+          </ul>
+
+        </div>
+
+        <div style="background:rgba(0, 0, 0, 0.9);  height:320px; padding:20px;" id="slideshow-carousel">
+
+         <!-- <h3 style="margin-top:-30px;">POST PRODUCTION</h3>-->
+
+          <ul style="width:250px; padding:20px; margin-top:-20px; margin-left:-20PX;" id="carousel" class="jcarousel jcarousel-skin-tango">
+
+          
+<li><a href="#" rel="p7">Masani</a></li>
+ <li><a href="#" rel="p2">Pandiyanaadu Teaser</a></li>         
+<li><a href="#" rel="p1">Rummy</a></li>
+<li><a href="#" rel="p3">Sivappu</a></li>
+<li><a href="#" rel="p4">360 DEGREE STUDIOS POST PRODUCTION MOVIES</a></li>
+
+
+
+         
+
+            
+
+         
+
+           
+
+            
+
+          </ul>
+
+        
+
+        
+
+        
+
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+
+      
+
+      </div>
+
+      </div>
+
+          
+
+          <div class="clearfix"></div>
+
+        
+
+        
+
+        
+
+        </div>
+
+       
+
+          
+
+           
+
+	</div>
+
+<!-- /TM Guys -->
+
+
+
+	</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<footer>
+
+	<div id="footer" class="container_12 clearfix">
+
+		<div class="outer"><div id="tmfooterlinks"> 	
+
+		<div style="width:700px;">
+
+		<h4>News And Events</h4>
+
+		<ul>
+
+			<li><a href="#"> <img src="images/news1.jpg" style="padding:5px; float:left;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</a></li>
+
+			<li><a href="#"><img src="images/news2.jpg" style="padding:5px; float:left;">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.</a></li>
+
+			<li><a href="#"><img src="images/news3.jpg" style="padding:5px; float:left;">Velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero. Vel illum dolore eu feugiat nulla facilisis at vero.</a></li>
+
+		</ul>
+
+	</div>
+
+		<!--<div>
+
+		<h4>Our offers</h4>
+
+		<ul>
+
+			<li><a href="index.php?controller=new-products">New products</a></li>
+
+			<li><a href="index.php?controller=prices-drop">Specials</a></li>
+
+			<li><a href="index.php?controller=best-sales">Top sellers</a></li>
+
+			<li><a href="index.php?controller=manufacturer">Manufacturers</a></li>
+
+			<li><a href="index.php?controller=supplier">Suppliers</a></li>
+
+		</ul>
+
+	</div>
+
+		<div>
+
+		<h4>My account</h4>
+
+		<ul>
+
+			<li><a href="index.php?controller=history">My orders</a></li>
+
+			<li><a href="index.php?controller=addresses">My addresses</a></li>
+
+			<li><a href="index.php?controller=identity">My personal info</a></li>
+
+			<li><a href="index.php?controller=order-slip">My credit slips</a></li>
+
+			<li><a href="index.php?controller=discount">My vouchers</a></li>
+
+		</ul>
+
+	</div> -->
+
+		<p>&copy; 2012 Powered by <a href="#">iPOT Technologies</a>. All rights reserved</p>
+
+</div><!-- MODULE Block contact infos -->
+
+<div id="block_contact_infos">
+
+	<h4>Contact us</h4>
+
+	<ul>
+
+		<li class="contact_infos_address">
+
+#51, Indira Gandhi Street (1st floor flat 2A & 2B)
+
+Kaveri Rangan Nagar, Saligramam
+
+Chennai- 600 093</li>		<li class="contact_infos_phone">044-42129184</li>	</ul>
+
+</div>
+
+<!-- /MODULE Block contact infos --><div id="tmadvblock1">
+
+	<a href="#" title=""> </a>
+
+</div><!-- [[%FOOTER_LINK]] --></div>
+
+	</div>
+
+</footer>
+
+
+
+</div>
+
+</div>
+
+
+
+<!--<script type="text/javascript" src="js/ga.js"></script> -->
+
+
+
+
+
+
+
+				<!-----------------Gallery Script--------------->
+
+    <!--<script type="text/javascript" src="http://ryrych.github.com/rlightbox2/widget/lib/jquery-1.6.4.min.js"></script> -->
+
+    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>     
+
+    <script type="text/javascript">
+
+	jQuery(function($) {
+
+	    var $chosenSheet,
+
+		$stylesheets = $( "a[id^=theme-]" );
+
+	    
+
+	    // theme switcher
+
+	    $stylesheets.click(
+
+		function() {
+
+		    $chosenSheet = $( this ).attr( "href" );
+
+		    $( "#theme").attr( "href", $chosenSheet );
+
+		    
+
+		    // mark this A as an active
+
+		    $stylesheets.removeClass( "active" );
+
+		    $( this ).addClass( "active" );
+
+		    return false;
+
+		}
+
+	    );
+
+	    
+
+	    // run rlightbox
+
+	    $( ".lb" ).rlightbox();
+
+	    $( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
+
+	});
+
+    </script>
+
+    
+
+    <link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/lightbox.min.css" /> 
+
+    
+
+    <!-----------///Gallery script///--------------->
+
+
+
+</body>
+
+
+<!-- Mirrored from 360digital.in/audio.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Feb 2026 14:14:08 GMT -->
+</html>
+

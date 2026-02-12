@@ -1,0 +1,26 @@
+
+/*.recipecolumn4 ul li { width:200px; }
+.recipecolumn3 ul li { width:275px; }
+.recipecolumn2 ul li { width:430px; }
+.recipecolumn1 ul li { width:200px; }*/
+#filters { display: block; position: relative; float:right; margin-top:-50px; }
+#filters li { display: inline-block; }
+#filters a { padding:8px 15px; text-shadow:1px 1px 1px #fff; text-decoration:none; font-size:16px ;font-weight:normal;color:#000;text-transform:uppercase; font-family: 'Oswald', sans-serif;}
+#filters a.selected { text-align:center; text-shadow:none; border:1px solid #fff; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);  -webkit-border-radius:6px; box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); }
+#recipecontainer { display:block; overflow:hidden; margin:0 auto; }
+#recipecontainer > ul { text-align:center }
+/*#recipecontainer > ul > li { display:inline-block;  background-color:#fff;  margin:0 14px 25px 14px; padding:4px 4px 15px 4px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); text-align:left; background: #fff url("../images/linebottom.png") repeat-x scroll left bottom; }*/
+#recipecontainer ul.hidden { display:none; }
+#recipecontainer ul a.fancyboxpopup { list-style: none outside none; position: relative; display:inline-block; }
+#recipecontainer ul li a.title { font-size: 18px; font-style: italic; display: block; font-style:normal; font-family: 'Crete Round', serif; line-height:32px }
+#recipecontainer ul li .recipedetails {padding:8px; display:block}
+#recipecontainer ul li a span.category { color: #555; content: attr(data-description); font-size: 11px; font-style: italic; display: block; text-align: left; text-transform: lowercase; text-align:center; text-align:center; }
+#recipecontainer ul li span.view { background: url("../images/view.html") no-repeat scroll center center transparent; text-align:center; width:100%; display:none; height:75px; position:absolute; bottom:50%; margin-bottom:-38px }
+#recipecontainer ul li a:hover span.view { display:block; position:absolute; z-index:999; margin-top:-55% }
+.isotope-item { z-index: 2; }
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; }
+.isotope { -webkit-transition-property: height, width; -moz-transition-property: height, width; -ms-transition-property: height, width; -o-transition-property: height, width; transition-property: height, width; }
+.isotope .isotope-item { -webkit-transition-property: -webkit-transform, opacity; -moz-transition-property:    -moz-transform, opacity; -ms-transition-property:     -ms-transform, opacity; -o-transition-property:         top, left, opacity; transition-property:         transform, opacity; }
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; }
+.isotope.infinite-scrolling { -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none; }
